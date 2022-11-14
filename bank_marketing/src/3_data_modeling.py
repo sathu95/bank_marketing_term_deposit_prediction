@@ -32,7 +32,7 @@ print("Performing a Grid search to identify best set of parameters")
 # defining parameter range for GridSearch
 param_grid = {'C': [0.1, 1, 10, 100, 1000], 
               'gamma': [1, 0.1, 0.01, 0.001, 0.0001],
-              'kernel': ['rbf']} 
+              'kernel': ['poly','rbf']} 
   
 grid = GridSearchCV(SVC(), param_grid, refit = True, verbose = 3)
   
